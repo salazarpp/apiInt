@@ -5,6 +5,7 @@ import org.junit.jupiter.api.Test;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Map;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -14,7 +15,7 @@ public class ProductListTest {
     @Test
     public void getProd() {
 
-        List testResult = productList.getProducts();
+        Map testResult = productList.getProducts();
 
         assertNotNull (testResult);
     }
@@ -29,7 +30,7 @@ public class ProductListTest {
                 new Product("banana" , "fruit")
         };
 
-        List testResult = productList.setProducts(listExample);
+        Map testResult = productList.setProducts(listExample);
 
         assertNotNull (testResult);
     }

@@ -4,8 +4,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 @SpringBootApplication
 @RestController
@@ -16,12 +16,12 @@ public class InterviewApplication {
 	}
 
 	@GetMapping("/products")
-	public List Products() {
+	public Map Products() {
 		return p.getProducts();
 	}
 
 	@PostMapping(value = "/products")
-	public List postBody(@RequestBody Product[] product) {
+	public Map postBody(@RequestBody Product[] product) {
 		return p.setProducts(product);
 	}
 }

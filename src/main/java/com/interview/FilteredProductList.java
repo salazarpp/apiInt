@@ -4,14 +4,14 @@ import java.util.List;
 
 public class FilteredProductList {
     public String typeName;
-    public List<String> categoryList ;
+    public List categoryList ;
 
-    public FilteredProductList(String typeName, List<String> categoryList ) {
+    public FilteredProductList(String typeName, List categoryList ) {
         this.typeName = typeName;
         this.categoryList  = categoryList ;
     }
 
-    public List<String> getCategoryList() {
+    public List getCategoryList() {
         return categoryList;
     }
 }
